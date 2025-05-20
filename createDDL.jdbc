@@ -1,0 +1,3 @@
+CREATE TABLE alumnos (id_alumno INTEGER NOT NULL, foto LONGBLOB, nombre_alumno VARCHAR(255), PRIMARY KEY (id_alumno))
+CREATE TABLE cursos (id_curso INTEGER NOT NULL, nombre_curso VARCHAR(255), PRIMARY KEY (id_curso))
+CREATE TABLE matriculas (id_matricula INTEGER AUTO_INCREMENT NOT NULL, id_alumno INTEGER, id_curso INTEGER, fecha_inicio DATE, PRIMARY KEY (id_matricula))
